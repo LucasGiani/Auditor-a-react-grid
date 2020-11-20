@@ -144,7 +144,12 @@ class App extends React.Component {
           EstadoMaterial: "Adobe",
           NumeroEnsayo: 33
         }
-      ]
+      ],
+      gridview: true,
+      autoheight: true,
+      auwidth: true,
+      sortorder: "asc",
+      pager: '#pjmap', 
     };
   }
 
@@ -154,7 +159,9 @@ class App extends React.Component {
         <h1>Hello StackBlitz!</h1>
         <p>Start editing to see some magic happen :)</p>
         <FancyGridReact config={this.getConfig()} />
+        <div id="pjmap"></div>
       </div>
+      
     );
   }
 }
